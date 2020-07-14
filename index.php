@@ -13,6 +13,9 @@
     <!-- Font-awesonme CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 
+    <!-- Aos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Flickty CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     
@@ -21,6 +24,7 @@
 
     <title>Pweety Bakery</title>
 </head>
+
 <body>
     <!-- navbar -->  
     <nav class="navbar navbar-expand-lg fixed-top ">  
@@ -52,9 +56,9 @@
             <div class="header-content">
                 <h3>Hi, I'm </h3>
                 <h1>Pweety Decks</h1>
-                <h3 class="third">A multi-national elite baker, nice to meet you</h3>
+                <h3 class="third">A multinational elite baker, nice to meet you</h3>
 
-                <button class="btn btn-outline-secondary header-button" type="button">
+                <button class="header-button" type="button">
                     BOOK NOW
                 </button>
             </div>
@@ -98,10 +102,10 @@
             <h3> ABOUT ME </h3>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 about-img">
+                    <div class="col-lg-6 col-md-6 col-sm-12 about-img" data-aos="fade-up-right">
                         <img src="assets/images/Rectangle 49.svg" alt="about-img">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 about-text">
+                    <div class="col-lg-6 col-md-6 col-sm-12 about-text" data-aos="fade-up-left">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptate optio totam magnam consequatur quisquam iusto laboriosam necessitatibus corporis dignissimos, at aspernatur quam quas! Molestias assumenda accusamus veniam ex accusantium?</p>
                     </div>
                 </div>
@@ -113,43 +117,43 @@
             <h3> PRODUCTS </h3>
             <div class="product-container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up-right">
                         <img src="assets/images/Rectangle 51.svg" alt="product-1">
                         <p>Macrons</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in-right">
                         <img src="assets/images/Rectangle 52.svg" alt="product-2">
                         <p>Donot</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="flip-right">
                         <img src="assets/images/Rectangle 53.svg" alt="product-3">
                         <p>Cupcake</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in">
                         <img src="assets/images/Rectangle 54.svg" alt="product-4">
                         <p>Cinnamon roll</p>
                     </div>
 
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="flip-left">
                         <img src="assets/images/Rectangle 55.svg" alt="product-5">
                         <p>Chocolate cake</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="zoom-out">
                         <img src="assets/images/Rectangle 56.svg" alt="product-6">
                         <p>Cookies</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="flip-up">
                         <img src="assets/images/Rectangle 57.svg" alt="product-7">
                         <p>Granola bars</p>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up-left">
                         <img src="assets/images/Rectangle 58.svg" alt="product-8">
                         <p>Baguette</p>
                     </div>
                 </div>
             </div>
 
-            <button class="btn btn-outline-secondary product-button" type="button">
+            <button class="product-button" type="button">
                 View more
             </button>
         </section>
@@ -264,6 +268,8 @@
     </main>
     <!-- Main end -->
 
+
+    <!-- Footer start -->
     <footer id="footer" class="page-footer">
 
         <!-- Footer Text -->
@@ -277,7 +283,9 @@
 
                     <!-- Content -->
                     <div >
-                        <h2 class="font-weight-bold">Pweety Baker</h5>
+                        <h2 class="font-weight-bold">Pweety Baker</h2>
+
+                        <h3>Contact Us</h3>
                         <p>Phone: +44 9586 00976</p>
                         <p>Email: info@PweetyBaker.com</p>
                         <p>Address: 9764 Monroe Ave. Bay Shore, NY.</p>
@@ -311,7 +319,7 @@
         </div>
         <!-- Footer Text -->
     </footer>
-    <!-- Footer -->
+    <!-- Footer end -->
 
   
 
@@ -323,6 +331,13 @@
 
 <!-- JavaScript -->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- Aos js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <!-- Custom js -->
 <script src="assets/js/index.js"></script>
