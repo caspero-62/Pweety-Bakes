@@ -1,0 +1,505 @@
+/* General styles and typography*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #0F0F0F;    
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 4.5em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+h4{
+    font-weight: 500;
+}
+
+h6{
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+.third{
+    text-align: center;
+}
+
+.testimonial-card .container p{
+    font-size: 13px;
+}
+
+.flickity-page-dots .dot {
+    background-color: #F2C44C;
+}
+
+
+/* Buttons and CTA'S */
+.header-button{
+    background-color: #F2C44C;
+    border: none;
+    margin-top: 5%;
+    padding: 2% 5%;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.header-button:hover,
+.product-button:hover,
+footer button:hover{
+    background-color: #FF971E; 
+}
+
+.product-button{
+    margin-top: 1.5em;
+    background: #F2C44C;
+    border: none;
+    padding: 1% 2%;
+    color: #0F0F0F;
+    font-weight: bold;
+}
+
+.product-button:hover{
+    color: #0F0F0F;
+}
+
+footer button{
+    background: #F2C44C;
+    border: none;
+    padding: 1% 2%;
+    color: #0F0F0F;
+}
+
+
+
+
+
+
+
+/* components */
+nav{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-brand{
+    margin-left: 30px;
+}
+
+.navbar-brand img{
+    width: 70%;
+}
+
+.nav-link{ 
+    color: #0F0F0F; 
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+.nav-link:hover{ 
+    background: #f4f4f4; 
+    color: #f97300; 
+}
+
+.navbar-collapse{ 
+    justify-content: flex-end;
+}
+
+.navbar-toggler{ 
+    background:#FFFFFF;
+}
+
+.navbar-toggler-icon{ 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(249, 115, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.header{
+    background-image: url('../images/Rectangle\ 48.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.header-content{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accolades-content{
+    background-image: url('../images/Rectangle\ 50.svg');
+    padding: 3% 5%;
+}
+
+.accolades-content .row div{
+    text-align: center;
+    padding-top: 2%;
+}
+
+.accolades-content .row div h3{
+    font-weight: bolder;
+}
+
+
+
+#about,
+#products, 
+#gallery,
+#testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+#about h3,
+#products h3,
+#gallery h3,
+#testimonial h3{
+    display: inline-block;
+    margin: 2em auto;
+    padding: 1%;
+    border-bottom: 3px solid #F2C44C;
+}
+
+#about h3::after,
+#products h3::after,
+#gallery h3::after,
+#testimonial h3::after{
+    content: " ";
+    margin-top: 1.5em;
+}   
+
+#about .container{
+    padding: 0;
+    width: 100%;
+}
+
+#about .container div img{
+   width: 80%;
+   margin-left: 10%;
+}
+
+#about .container .about-text{
+   margin: auto;
+   padding: 5%;
+   text-align: center;
+}
+
+.gallery-container,
+.product-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-container{
+    width: 85%;
+    margin: 0 auto;
+}
+
+.product-container .row{
+    justify-content: space-evenly;
+}
+
+.product-container .row div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.product-container .row div img:hover{
+    opacity: 0.6;
+}
+
+.product-container .row div p{
+    margin-top: 1em;
+    font-size: 16px;
+}
+
+
+.gallery-container .row{
+    margin-bottom: 2em;
+}
+
+.carousel-cell{
+    background-color: #FFFFFF;
+}
+
+.carousel-cell img:hover{
+    opacity: 0.6;
+}
+
+.main-carousel{
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+
+.carousel-cell {
+    width: 30%;
+    height: 250px;
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow: hidden;
+    counter-increment: gallery-cell;
+}
+
+#testimonial{
+    background: url('../images/Rectangle 19.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+#testimonial .main-carousel .carousel-cell{
+    width: 30%;
+    height: 350px;
+}
+
+/* position dots up a bit */
+#testimonial .main-carousel .flickity-page-dots {
+    bottom: -22px;
+}
+
+  /* dots are lines */
+#testimonial .main-carousel .flickity-page-dots .dot {
+    height: 4px;
+    width: 40px;
+    margin: 0;
+    border-radius: 0;
+} 
+
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img{
+    display: grid;
+    place-items: center;
+    padding-top: 5%;
+    height: 40%;
+}
+
+.card-img img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+.testimonial-card .container{
+    height: 60%;
+    padding: 3em;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+footer{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+}
+
+footer div .row{
+    margin: 2em auto;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.icons{
+    margin-top: 1.5em;
+}
+
+.icons i{
+    margin-right: 1em;
+}
+
+form,
+.footer-content{
+    margin: auto;
+}
+
+.footer-content div h2{
+    margin-bottom: 2em;
+}
+
+form h3{
+    margin-bottom: 3em;
+}
+
+form input{
+    padding: 2%;
+    margin-bottom: 0.8em;
+    font-size: 14px;
+    width: 100%;
+}
+
+form textarea{
+    padding: 2%;
+    font-size: 14px;
+    width: 100%;
+    height: 180px;
+    margin-bottom: 1.2em;
+}
+
+
+
+
+/* media Queries */
+@media screen and (max-width: 944px) {
+    h1{
+        font-size: 3rem;
+    }
+    
+    h3{
+        font-size: 1.3rem;
+    }
+
+    h6{
+        font-size: 0.8rem;
+    }
+    
+    p{
+        font-size: 0.9rem;
+    } 
+
+    .navbar-brand{
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #testimonial .main-carousel .carousel-cell{
+        width: 35%;
+        height: 350px;
+        margin-right: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-cell{
+        width: 50%;
+    }
+
+    
+    .carousel-cell img{
+        display: block;
+    }
+
+    #testimonial .main-carousel .carousel-cell{
+        width: 50%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .carousel-cell{
+        width: 70%;
+    }
+
+    .carousel-cell img{
+        display: block;
+    }
+
+    #testimonial .main-carousel .carousel-cell{
+        width: 70%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 484px) {
+    .navbar-brand{
+        width: 75%;
+    }
+
+    .navbar-brand img{
+        width: 45%;
+    }
+
+    .accolades{
+        margin-top: -40px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    h1{
+        font-size: 2.3rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    .accolades-content .row div h3{
+        font-weight: bolder;
+        font-size: x-large;
+    }
+
+    .accolades-content .row div h4{
+        font-weight: lighter;
+        font-size: smaller;
+    }
+
+    .carousel-cell{
+        width: 90%;
+    }
+
+    .carousel-cell img{
+        display: block;
+    }
+
+    #testimonial .main-carousel .carousel-cell{
+        width: 90%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .navbar-brand{
+        width: 65%;
+    }
+
+    .carousel-cell{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #testimonial .main-carousel .carousel-cell{
+        width: 100%;
+        height: 350px;
+    }
+}
