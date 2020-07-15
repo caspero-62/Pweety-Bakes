@@ -1,9 +1,9 @@
 <?php
 
-$hostname = "ec2-54-236-169-55.compute-1.amazonaws.com";
-$username = "affhlcjujlixgl";
-$password = "d0b6d439694c80535377960727bf2cbdaed8f03d810859ee34916ae5905260c0";
-$db = "ddoskit3tds3db";
+$hostname = "us-cdbr-east-02.cleardb.com";
+$username = "b1ee0ffeb4cb3d";
+$password = "4de66d0f";
+$db = "heroku_ac5e100549d931c";
 
 $dbconnect=mysqli_connect($hostname,$username,$password,$db);
 
@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
     $email=$_POST['email'];
     $message=$_POST['message'];
 
-    $query = "INSERT INTO `ORDERS` (`email`, `message`) VALUES ('{$email}', '{$message}')";
+    $query = "INSERT INTO `order` (`email`, `message`) VALUES ('{$email}', '{$message}')";
 
     if (!mysqli_query($dbconnect, $query)) {
         die('An error occured. Your order has not been submitted.');
