@@ -11,7 +11,7 @@ if($dbconnect->connect_error) {
     die("Database connection failed: " . $dbconnect->connect_error);
 }
 
-if(isset($_POST['submit'])) {
+if(isset($_POST)) {
     $email=$_POST['email'];
     $message=$_POST['message'];
 
