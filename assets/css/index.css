@@ -406,6 +406,7 @@ footer .template-links div{
 
 footer .template-links div a,
 footer .template-links div a:hover{
+    margin: auto;
     color: #E5E5E5;
     text-decoration: none;
 }
