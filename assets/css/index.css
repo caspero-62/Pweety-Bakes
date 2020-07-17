@@ -388,7 +388,31 @@ form textarea{
     margin-bottom: 1.2em;
 }
 
+footer .template-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 1% auto;
+}
 
+
+footer .template-links div{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+footer .template-links div a,
+footer .template-links div a:hover{
+    color: #E5E5E5;
+    text-decoration: none;
+}
+
+footer .template-links div a:hover{
+    color: #F2C44C;
+}
 
 
 /* media Queries */
@@ -435,6 +459,22 @@ form textarea{
         width: 50%;
         height: 350px;
     }
+}
+
+@media screen and (max-width: 709px) {
+    footer .template-links{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin-left: 2%;
+    }
+
+    footer .template-links div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
 
 @media screen and (max-width: 560px) {
