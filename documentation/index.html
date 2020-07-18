@@ -49,8 +49,13 @@
         background: #444444;
         color: #dddddd;
       }
-      #documenter_sidebar #documenter_logo {
-        background-image: url(assets/images/logo.png);
+      #documenter_sidebar #documenter_logo{
+        display: grid;
+        place-items: center;
+      }
+      #documenter_sidebar #documenter_logo img {
+        width: 100%;
+        margin: auto;
       }
       a {
         color: #0000ff;
@@ -123,7 +128,9 @@
   </head>
   <body class="documenter-project-go">
     <div id="documenter_sidebar">
-      <a href="#documenter_cover" id="documenter_logo"></a>
+      <a href="#documenter_cover" id="documenter_logo">
+        <img src="assets/images/logo.svg" alt="logo">
+      </a>
       <ul id="documenter_nav">
         <li><a class="current" href="#documenter_cover">Start</a></li>
 
